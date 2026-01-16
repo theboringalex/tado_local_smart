@@ -1,4 +1,47 @@
 # Tado Local Smart Control 🏠🔥
+A local Home Assistant integration for Tado thermostats (via HomeKit Controller). Developed by theboringAlex.
+
+This integration replaces the Tado Cloud control with purely local logic within Home Assistant. It accounts for presence, schedules, and mold risk.
+
+Features
+🔒 100% Local: No Tado Cloud necessary (Prerequisite: Tado integrated into HA via HomeKit).
+
+👥 Multi-User: Detects Marie, Krissy, and Alex (or any person entities).
+
+🕒 Time Control: Simple Day/Night configuration via UI.
+
+🍄 Mold Protection: Automatically warns when humidity is too high.
+
+🤖 AI-Ready: Prepared for weather offsets and AI optimization.
+
+Installation (HACS)
+Add this repository as a Custom Repository in HACS: https://github.com/theboringAlex/hacs_tado_local
+
+Install "Tado Local Smart Control".
+
+Restart Home Assistant.
+
+Go to Settings -> Devices & Services -> Add Integration.
+
+Search for Tado Local Smart Control.
+
+Configuration
+In the setup dialog, select:
+
+The residents (for presence detection).
+
+The thermostats to be controlled.
+
+Your weather entity.
+
+Target temperatures for Comfort, Eco/Night, and Away.
+
+License
+MIT
+
+
+
+# Tado Local Smart Control 🏠🔥
 
 Eine **lokale** Home Assistant Integration für Tado Thermostate (via HomeKit Controller).  
 Entwickelt von **theboringAlex**.
